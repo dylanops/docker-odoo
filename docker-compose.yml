@@ -2,7 +2,7 @@ version: '3'
 
 services:
   postgres:
-    image: postgres:13
+    image: postgres:15.0-alpine
     container_name: postgres
     restart: always
     ports:
@@ -16,7 +16,7 @@ services:
       - ./data/postgres:/var/lib/postgresql/data
 
   odoo:
-    image: odoo:15
+    image: dylanops/odoo:16.0
     container_name: odoo
     restart: always
     depends_on:

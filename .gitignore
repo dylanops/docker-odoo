@@ -1,3 +1,4 @@
 data
 .env
 !data/img
+etc/odoo.conf
