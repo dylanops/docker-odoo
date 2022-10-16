@@ -1,6 +1,6 @@
-# Odoo 15
+# Odoo 16
 
-The repository support run odoo 16 in docker amd, arm.
+The repository support run odoo 16 in docker on Arm architecture such as Mackbook M1/M2
 
 ## How to run?
 
