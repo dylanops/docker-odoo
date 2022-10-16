@@ -1,6 +1,6 @@
 # Odoo 15
 
-The repository support run odoo 15 in docker.
+The repository support run odoo 16 in docker amd, arm.
 
 ## How to run?
 
