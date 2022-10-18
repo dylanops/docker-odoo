@@ -32,13 +32,3 @@ docker exec -ti --user root odoo chown -R odoo:odoo /mnt/extra-addons/ var/lib/o
 ```bash
 docker exec -ti odoo odoo scaffold /mnt/extra-addons/custom_module
 ```
-
-Thank for star to my project!
-
-export DOCKER_USER=dylanops
-
-docker buildx build -t "${DOCKER_USER}/odoo:16.0" --platform linux/amd64,linux/arm64 --push .
-
-docker buildx imagetools inspect "$DOCKER_USER/odoo:16.0"
-
-docker run --rm "$DOCKER_USER/odoo:16.0"
