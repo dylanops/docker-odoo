@@ -36,5 +36,7 @@ docker exec -ti odoo odoo scaffold /mnt/extra-addons/custom_module
 ## Build docker with multi arch
 
 ```bash
+cd docker/16
+
 docker buildx build --push --platform linux/amd64,linux/arm64/v8 . --tag dylanops/odoo:16
 ```
