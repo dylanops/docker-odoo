@@ -32,3 +32,9 @@ docker exec -ti --user root odoo chown -R odoo:odoo /mnt/extra-addons/ var/lib/o
 ```bash
 docker exec -ti odoo odoo scaffold /mnt/extra-addons/custom_module
 ```
+
+## Build docker with multi arch
+
+```bash
+docker buildx build --push --platform linux/amd64,linux/arm64/v8 . --tag dylanops/odoo:16
+```
