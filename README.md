@@ -1,6 +1,6 @@
 # Odoo 16
 
-The repository support run odoo 16 in docker on ADM/ARM architecture
+The repository support run odoo 16 in docker on AMD/ARM architecture
 
 ## How to run?
 
