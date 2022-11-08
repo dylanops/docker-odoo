@@ -1,6 +1,6 @@
 # Odoo 16
 
-The repository support run odoo 16 in docker on Arm architecture such as Mackbook M1/M2
+The repository support run odoo 16 in docker on ADM/ARM architecture
 
 ## How to run?
 
@@ -33,7 +33,7 @@ docker exec -ti --user root odoo chown -R odoo:odoo /mnt/extra-addons/ var/lib/o
 docker exec -ti odoo odoo scaffold /mnt/extra-addons/custom_module
 ```
 
-## Build docker with multi arch
+## Build docker with multi architecture
 
 ```bash
 cd docker/16
