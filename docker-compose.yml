@@ -16,6 +16,9 @@ services:
       - ./data/postgres:/var/lib/postgresql/data
 
   odoo:
+    build:
+      context: 'docker/16'
+      dockerfile: 'Dockerfile'
     image: dylanops/odoo:16
     container_name: odoo
     restart: always

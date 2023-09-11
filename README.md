@@ -23,9 +23,9 @@ docker exec -ti --user root odoo chown -R odoo:odoo /mnt/extra-addons/ var/lib/o
 * Go to [http://localhost:8069/](http://localhost:8069/)
 * Database Name: odoo
 
-![odoo 15](./data/img/step1.png)
+![odoo 15](./img/step1.png)
 
-![odoo 15](./data/img/step2.png)
+![odoo 15](./img/step2.png)
 
 ## How to create custom module?
 
