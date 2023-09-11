@@ -30,6 +30,17 @@ docker exec -ti --user root odoo chown -R odoo:odoo /mnt/extra-addons/ var/lib/o
 ## How to create custom module?
 
 ```bash
+Open the file:
+
+/etc/odoo/odoo.conf
+
+Add lines:
+
+addons_path = /mnt/extra-addons
+data_dir = /var/lib/odoo
+  
+Then create a new module:
+
 docker exec -ti odoo odoo scaffold /mnt/extra-addons/custom_module
 ```
 
