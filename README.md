@@ -1,6 +1,6 @@
-# Odoo 16
+# Odoo 17
 
-The repository support run odoo 16 in docker on Linux/Mac OSX M1 M2 architecture
+The repository support run odoo 17 in docker on Linux/Mac OSX M1 M2 architecture
 
 ## How to run?
 
@@ -38,16 +38,8 @@ Add lines:
 
 addons_path = /mnt/extra-addons
 data_dir = /var/lib/odoo
-  
+
 Then create a new module:
 
 docker exec -ti odoo odoo scaffold /mnt/extra-addons/custom_module
-```
-
-## Build docker with multi architecture
-
-```bash
-cd docker/16
-
-docker buildx build --push --platform linux/amd64,linux/arm64/v8 . --tag dylanops/odoo:16
 ```
