@@ -3,7 +3,7 @@ version: '3'
 services:
   postgres:
     image: postgres:15.0-alpine
-    container_name: postgres
+    container_name: postgres15
     restart: always
     ports:
       - "5432:5432"
@@ -16,11 +16,8 @@ services:
       - ./data/postgres:/var/lib/postgresql/data
 
   odoo:
-    build:
-      context: 'docker/16'
-      dockerfile: 'Dockerfile'
-    image: dylanops/odoo:16
-    container_name: odoo
+    image: odoo:17.0
+    container_name: odoo17
     restart: always
     depends_on:
       - postgres
@@ -35,5 +32,3 @@ services:
       - ./etc/odoo:/etc/odoo
       - ./data/addons:/mnt/extra-addons
       - ./data/odoo:/var/lib/odoo
-
-
