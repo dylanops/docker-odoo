@@ -1,4 +1,4 @@
-# Odoo 17
+# Docker compose for Odoo 17
 
 The repository support run odoo 17 in docker on Linux/Mac OSX M1 M2 architecture
 
