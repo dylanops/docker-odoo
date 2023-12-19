@@ -32,3 +32,17 @@ services:
       - ./etc/odoo:/etc/odoo
       - ./data/addons:/mnt/extra-addons
       - ./data/odoo:/var/lib/odoo
+
+  citus:
+    image: citusdata/citus:12.1
+    container_name: citus15
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - ./data/citus:/var/lib/postgresql/data
